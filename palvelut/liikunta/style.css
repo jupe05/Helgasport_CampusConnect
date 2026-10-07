@@ -1,0 +1,149 @@
+:root {
+    --paavari: #0a6ab0;
+    --tumma: #084a7d;
+    --vaalea-sininen: #eaf5fc;
+    --tausta: #f4f8fb;
+    --teksti: #1f2933;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--tausta);
+    color: var(--teksti);
+    margin: 0;
+    line-height: 1.5;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-bottom: 1px solid #dde6ee;
+}
+
+h1 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+nav a {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    border: 1px solid var(--paavari);
+    border-radius: 999px;
+    color: var(--paavari);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a[aria-current="page"] {
+    background-color: var(--paavari);
+    color: #ffffff;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h2 {
+    color: var(--tumma);
+}
+
+.kortit {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+}
+
+.kortti {
+    background-color: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.kortti img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.kortti-sisalto {
+    padding: 1rem;
+}
+
+.kortti-sisalto h3 {
+    margin-top: 0;
+}
+
+.nappi {
+    display: inline-block;
+    background-color: var(--paavari);
+    color: #ffffff;
+    padding: 0.7rem 1.2rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nappi:hover,
+.nappi:focus {
+    background-color: var(--tumma);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    color: #52606d;
+}
+.aika {
+    color: var(--paavari);
+    font-weight: bold;
+    margin: 0 0 0.25rem 0;
+}
+.hinta {
+    color: var(--tumma);
+    font-weight: bold;
+}
+.portaalipalkki {
+    background-color: #0079c2;
+    padding: 0.5rem 1rem;
+}
+
+.portaalipalkki a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.portaalipalkki a:hover,
+.portaalipalkki a:focus {
+    text-decoration: underline;
+}
+.helgasport-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: #0079c2;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+}
